@@ -76,7 +76,5 @@ typings/
 # misc
 .DS_Store
 
-# umi
-.umi
-.umi-production
 server/config.ts
+server/tsconfig.tsbuildinfo

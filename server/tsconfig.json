@@ -1,21 +1,17 @@
 {
-  "compilerOptions": {
-    "rootDir": "src",
-    "outDir": "lib",
-    "module": "Commonjs",
-    "target": "esnext",
-    "declaration": true,
-    "declarationMap": true,
-    "allowSyntheticDefaultImports": true,
-    "noImplicitAny": false,
-    "removeComments": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "sourceMap": false,
-    "composite": true,
-    "esModuleInterop": true,
-    "moduleResolution": "node",
-    "jsx": "preserve",
-    "lib": ["esnext"]
-  }
+    "compilerOptions": {
+        "module": "Commonjs",
+        "target": "esnext",
+        "moduleResolution": "node",
+        "declaration": true,
+        "declarationMap": true,
+        "allowSyntheticDefaultImports": true,
+        "noImplicitAny": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "sourceMap": false,
+        "composite": true,
+        "jsx": "preserve",
+        "lib": ["esnext"]
+    }
 }
