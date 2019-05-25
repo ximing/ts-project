@@ -56,5 +56,6 @@ module.exports = {
         require('@babel/plugin-proposal-nullish-coalescing-operator').default,
         require('@babel/plugin-proposal-do-expressions').default,
         require('@babel/plugin-proposal-function-bind').default,
+        require('react-hot-loader/babel'),
     ],
 };

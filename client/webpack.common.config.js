@@ -86,9 +86,7 @@ module.exports = {
             chunksSortMode: 'none',
         }),
         new ManifestPlugin(),
-        new CleanWebpackPlugin(['dist'], {
-            root: process.cwd(),
-        }),
+        new CleanWebpackPlugin(),
         new webpack.DefinePlugin({
             'process.env.ASSET_PATH': JSON.stringify(ASSET_PATH),
         }),
