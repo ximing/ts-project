@@ -2,8 +2,8 @@
   "private": true,
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "umi build",
-    "test": "umi test"
+    "build": "webpack --config webepack.build.config.js",
+    "test": "test"
   },
   "dependencies": {
     "@types/history": "^4.7.2",
