@@ -1,0 +1,83 @@
+{
+  "name": "mlweb",
+  "version": "1.0.0",
+  "description": "机器学习web",
+  "main": "index.js",
+  "scripts": {
+    "i": "CPPFLAGS=-I/usr/local/opt/openssl/include LDFLAGS=-L/usr/local/opt/openssl/lib npm install",
+    "build": "node build.js",
+    "start": "cd client && npm start",
+    "dev": "ts-node-dev --respawn --dedupe  ./server/main.ts",
+    "lint:es": "eslint --ext .js src mock tests",
+    "lint:ts": "tslint \"src/**/*.ts\" \"src/**/*.tsx\"",
+    "precommit": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ximing/mlweb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ximing/mlweb/issues"
+  },
+  "homepage": "https://github.com/ximing/mlweb#readme",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "eslint": "^5.15.3",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^5.0.1",
+    "husky": "^2.3.0",
+    "lint-staged": "^8.1.7",
+    "prettier": "^1.17.1",
+    "rimraf": "^2.6.2",
+    "standard-version": "^6.0.1",
+    "ts-node-dev": "^1.0.0-pre.35",
+    "tslint": "^5.16.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-react": "^3.6.0"
+  },
+  "dependencies": {
+    "@types/koa": "^2.0.48",
+    "@types/koa-bodyparser": "^4.2.2",
+    "@types/koa-json": "^2.0.18",
+    "@types/koa-logger": "^3.1.1",
+    "@types/koa-router": "^7.0.40",
+    "@types/lodash": "^4.14.129",
+    "@types/mime": "^2.0.1",
+    "@types/moment": "^2.13.0",
+    "@types/mongodb": "^3.1.27",
+    "@types/nanoid": "^2.0.0",
+    "@types/socket.io": "^2.1.2",
+    "axios": "^0.18.0",
+    "ioredis": "^4.9.5",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-is-json": "^1.0.0",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "mongodb": "^3.2.6",
+    "nanoid": "^2.0.2",
+    "prettier": "^1.17.1",
+    "socket.io": "^2.2.0",
+    "typescript": "^3.4.5"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "tslint --fix",
+      "git add"
+    ],
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
