@@ -77,4 +77,5 @@ typings/
 .DS_Store
 
 server/config.ts
+client/upload.js
 server/tsconfig.tsbuildinfo
